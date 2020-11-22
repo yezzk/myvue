@@ -5,7 +5,9 @@ import store from './store'
 import $ from 'jquery'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min'
+import axios from 'axios'
 
+Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 
 new Vue({

@@ -20,5 +20,11 @@ export default {
 
 <style>
 @import './assets/css/base.css';
+ul {
+margin:0;
+padding:0;
+text-indent: 30px;
+width: 100%;
+}
 
 </style>

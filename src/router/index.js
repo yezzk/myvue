@@ -8,6 +8,7 @@ const Free = () => import('@/views/free/Free.vue')
 const Charge = () => import('@/views/charge/Charge.vue')
 const Sell = () => import('@/views/sell/Sell.vue')
 const Profile = () => import('@/views/profile/Profile.vue')
+const SearchBook = () => import('@/views/search/SearchBook.vue')
 
 const routes = [
   {
@@ -33,6 +34,10 @@ const routes = [
   {
     path:'/profile',
     component:Profile
+  },
+  {
+    path:'/Search/:book',
+    component:SearchBook
   }
 ]
 

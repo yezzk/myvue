@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class=".container-{breakpoint}">
 <nav class="navbar navbar-expand bg-dark navbar-dark">
     <ul class="navbar-nav">
         <li class="nav-item active">
@@ -30,8 +30,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.navbar{
-            min-width:1000px;
-     
-}
+/* .navbar{
+    min-width:1000px;
+} */
 </style>

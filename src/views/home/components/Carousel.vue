@@ -1,9 +1,9 @@
 <template>
-<div class="container" id="carousel">
+<div  id="carousel" class="container">
     <div class="row">
         <!-- 左侧内容 -->
-        <div id="leftMain" class="col-4">
-             <span>图书分类</span>
+        <div id="leftMain" class="col-4 pl-4">
+             <span @click="searchAll">图书分类 </span>
                 <ul v-for="item in books">
                     <li><a href="">{{item}}</a></li>
                 </ul>
@@ -52,6 +52,11 @@ export default {
                     ,'辞书工具书学术书','考试书','基础与职业教育']
             
         }
+    },
+    methods:{
+        searchAll(){
+            this.$router.push('/search/all');
+        }
     }
 }
 </script>
@@ -65,29 +70,28 @@ export default {
     }
     #leftMain{
         background-color:#f6f6f6;
+
     }
-    span{
+    #leftMain span{
         display: block;
         height: 28px;
         font-size: 26px;
         margin-top: 16px;
         margin-bottom: 16px;
     }
-li {
-font-size: 20px;
-line-height: 150%;
-color: #333333;
-text-decoration: none;
-list-style:none;
-margin-top: 14px;
-padding-top: 0px;
-}
-ul {
-margin:0;
-padding:0;
-text-indent: 30px;
-width: 100%;
-}
+    #leftMain li {
+
+        /* display: block; */
+        /* height: 16%; */
+        font-size: 16px;
+        line-height: 16px;
+        color: #333333;
+        text-decoration: none;
+        list-style:none;
+        margin-top: 14px;
+        padding-top: 6px;
+        /* padding-bottom: 10px; */
+    }
 a {
     text-decoration:none;
     color: black;
